@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barber</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/site-stile.css">
+
+</head>
+<header class="col-12 py-3 position-fixed fixed-top z-top" id='header'>
+    <div class="container d-flex justify-content-around">
+	<!-- 
+        <div >
+            <div class="burger position-relative">
+                <span></span>
+            </div>
+        </div>
+	-->
+		<a href="#" class='d-block col-2'>
+			<img src="img/logo.webp" alt="Site Logo">
+		</a>
+        <nav id="navigation"
+             class="main-menu col-9 d-flex align-items-center justify-content-around col-xll-12 flex-xll-column ">
+            <ul class="flex-xll-column list-unstyled d-flex justify-content-center ">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a class="" href="#">About</a></li>
+                <li><a class="" href="#">Service</a></li>
+                <li class="has_child">
+                    <a class="" href="#">Blog</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Single Blog</a></li>
+                    </ul>
+                </li>
+                <li class="has_child">
+                    <a class="" href="#">Pages</a>
+                    <ul class="sub_menu">
+                        <li><a href="#">Elements</a></li>
+                    </ul>
+                </li>
+                <li><a class="" href="#">Contact</a></li>
+            </ul>
+        </nav>
+		<div class="col-lg-3 col-xl-3 d-lgg-none d-xll-inline-block">
+                <bottom class="btn btn-outline modal_form_trigger">Make an Appointment</bottom>
+        </div>
+    </div>
+</header>
+<main>
+    <section id="banner" class="banner d-flex justify-content-center align-items-center">
+        <div class="col-lg-6 col-xl-6 col-md-10 text-center ">
+            <div class="h1 text-center">Best Barber In Your Town</div>
+            <div class="after text-center p-3 position-relative d-inline-block h4 text-white">Professional Care</div>
+        </div>
+    </section>
+
+    <section class="container d-flex flex-wrap py-5">
+        <div class="col-lg-6 col-xl-6 col-md-12 position-relative px-4">
+            <img src="img/about_lft.webp" alt="logo">
+            <div class="position-absolute fixed-center px-4 py-4 bg-white text-center">
+                <i class="h2 far fa-clock"></i>
+                <div class="h4 font-weight-bold text-brown">Opening Hour</div>
+                <div class="h6 text-secondary pt-1 font-weight-light">Mon-Fri (9.00-11.00)</div>
+                <div class="h6 text-secondary font-weight-light">Sat (10.00-4.00)</div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-xl-6 col-md-12 px-4 pl-5 pt-5">
+            <div class="text-lightbrown pt-4">About Us</div>
+            <h2 class="text-brown  pt-4 h1">
+                Experienced and
+                <br>
+                Traditional Stylish
+                <br>
+                Barber Shop
+            </h2>
+            <p class="text-secondary font-weight-light pt-4 h6">
+                Inspires employees and organizations to support causes they care
+                about. We do this to bring more resources to the nonprofits that are
+                changing our world.
+            </p>
+            <div class="pt-4">
+                <a href="#" class="btn btn-brown ">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="position-relative py-3 py-5">
+        <img class="position-absolute service_img" src="img\banner_service.png" alt="service">
+        <div class="text-center py-5  ">
+            <div class="text-center text-white h3 pb-3">
+                <i class="fas fa-cut"></i>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center pb-3 section_title">
+                <h2 class="text-white text-42 font-weight-normal pb-3">our service</h2>
+            </div>
+        </div>
+        <div class="bg-white py-5 shadow container">
+            <div class="d-flex flex-wrap pb-3 justify-content-center">
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex ">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number ">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex ">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex ">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex ">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex ">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex ">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex ">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4  position-relative d-flex align-items-center justify-content-end doted overflow-hidden ">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4 position-relative d-flex align-items-center justify-content-end doted overflow-hidden">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6  px-4  col-md-12">
+                    <div class="col-12 service_block py-3 d-flex">
+                        <div class="col-lg-6 col-xl-6 col-xs-8  d-flex">
+                            <div class="col-lg-3 col-xl-3 d-flex align-items-center ">
+                                <img class="circle_img" src="img/service1.webp" alt="s1">
+                            </div>
+                            <div class="col-9 d-flex align-items-center text-brown text-18 font-weight-bold  pl-2 ">
+                                Beard and moustache
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xs-4 position-relative d-flex align-items-center justify-content-end doted overflow-hidden">
+                            <div class="d-inline-block bg-white p-1 text-18 text-lightbrown position-absolute number">
+                                $15
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-5">
+                    <a href="#" class="btn btn-brown modal_form_trigger">Make an Appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pb-5">
+        <div class="text-center py-5  ">
+            <div class="text-center text-lightbrown h3 pb-3">
+                <i class="fas fa-cut"></i>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center pb-3 section_title">
+                <h2 class="text-brown text-42 font-weight-normal pb-3">our service</h2>
+            </div>
+        </div>
+
+        <div class="d-flex flex-wrap gallery">
+            <div class="col-xl-4 col-lg-4 col-md-12 px-3">
+                <img src="img/gallery.webp" alt="" class="col-12">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 px-3">
+                <img src="img/gallery.webp" alt="" class="col-12">
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 px-3">
+                <img src="img/gallery.webp" alt="" class="col-12">
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5 bg-lightbrown ">
+        <div class="d-flex py-5 flex-wrap-reverse">
+            <div class="col-lg-6 col-xl-6 col-md-12 pl-5 d-flex flex-column justify-content-center">
+                <div class="text-lightbrown py-2 ">
+                    How we Work
+                </div>
+                <h2 class="text-brown  pt-4 h1">
+                    Watch the Video
+
+                    <br>
+                    How we Work?
+
+                </h2>
+                <p class="text-secondary font-weight-light pt-4 h6">
+                    Inspires employees and organizations to support causes they care <br>
+
+                    about. We do this to bring more resources to the nonprofits that are <br>
+
+                    changing our world.
+                </p>
+                <div class="py-5 ">
+                    <a href="#" class="btn btn-brown ">Book Now</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 px-3 position-relative ">
+
+                <img class="col-12" src="img/video.webp" alt="">
+                <div class="circle bg-white play position-absolute fixed-center">
+                    <div class="arrow-right position-absolute fixed-center"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="text-center py-5  ">
+            <div class="text-center text-lightbrown h3 pb-3">
+                <i class="fas fa-cut"></i>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center pb-3 section_title">
+                <h2 class="text-brown text-42 font-weight-normal pb-3">Our Cutter Masters</h2>
+            </div>
+        </div>
+        <div class="container p-1 d-flex flex-wrap gallery2">
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 p-3  workers_block text-center">
+                <img src="img/master1.webp" alt="">
+                <h2 class="text-brown pt-3 h5 text-center m-0">
+                    Macau Wilium
+                </h2>
+                <p class="text-secondary font-weight-light pt-1 h6 text-center">
+                    Massage Master
+                </p>
+                <div class="workers_socials position-absolute d-flex text-white text-24">
+                    <a href="#" class="text-decoration-none fas fa-envelope px-2"></a>
+                    <a href="#" class="text-decoration-none fab fa-twitter px-2"></a>
+                    <a href="#" class="text-decoration-none fab fa-linkedin-in px-2"></a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 p-3 workers_block text-center">
+                <img src="img/master1.webp" alt="">
+                <h2 class="text-brown pt-3 h5 text-center m-0">
+                    Dan Jacky
+                </h2>
+                <p class="text-secondary font-weight-light pt-1 h6 text-center">
+                    Mens Cut
+                </p>
+                <div class="workers_socials position-absolute d-flex text-white text-24">
+                    <a href="#" class="text-decoration-none  fas fa-envelope px-2"></a>
+                    <a href="#" class="text-decoration-none  fab fa-twitter px-2"></a>
+                    <a href="#" class="text-decoration-none  fab fa-linkedin-in px-2"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 p-3 workers_block text-center">
+                <img src="img/master1.webp" alt="">
+                <h2 class="text-brown pt-3 h5 text-center m-0">
+                    Luka Luka
+                </h2>
+                <p class="text-secondary font-weight-light pt-1 h6 text-center">
+                    Mens Cut
+                </p>
+                <div class="workers_socials position-absolute d-flex  text-24">
+                    <a href="#" class="text-decoration-none  fas fa-envelope px-2"></a>
+                    <a href="#" class="text-decoration-none  fab fa-twitter px-2"></a>
+                    <a href="#" class="text-decoration-none  fab fa-linkedin-in px-2"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-md-6 col-sm-12 p-3 workers_block text-center">
+                <img src="img/master1.webp" alt="">
+                <h2 class="text-brown pt-3 h5 text-center m-0">
+                    Rona Dana
+                </h2>
+                <p class="text-secondary font-weight-light pt-1 h6 text-center">
+                    Ladies Cut
+                </p>
+                <div class="workers_socials position-absolute d-flex  text-24">
+                    <a href="#" class="text-decoration-none  fas fa-envelope px-2"></a>
+                    <a href="#" class="text-decoration-none  fab fa-twitter px-2"></a>
+                    <a href="#" class="text-decoration-none  fab fa-linkedin-in px-2"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg_bottom_section">
+        <div class="container d-flex justify-content-end">
+            <div class="col-lg-5 col-md-5 col-md-12 py-5 px-4 bg-honey">
+                <h2 class="text-42 font-weight-normal pb-3 text-white pl-4">
+                    How to Find Us
+                </h2>
+                <div class="py-3 pl-4">
+                    <div class="bg-white divider"></div>
+                </div>
+
+                <ul class="list-unstyled contact_list font-weight-normal pl-4">
+                    <li class="address position-relative pl-5">
+                        <div class="text-16 pb-2">
+                            Location
+                        </div>
+                        <a href="#" class="d-block text-white pb-3 text-decoration-none text-18">
+                            200, A-block, Green road, USA
+                        </a>
+                    </li>
+                    <li class="Call position-relative pl-5">
+                        <div class="text-16 pb-2">
+                            Call Us
+                        </div>
+                        <a href="tel:+10 378 478 2789" class="d-block text-white pb-3 text-decoration-none text-18">
+                            +10 378 478 2789
+                        </a>
+                    </li>
+                    <li class="Mail position-relative pl-5">
+                        <div class="text-16 pb-2">
+                            Mail Us
+                        </div>
+                        <a href="mailto:contact@barbershop.com"
+                           class="d-block text-white pb-3 text-decoration-none text-18">
+                            contact@barbershop.com
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="pl-4">
+                    <bottom class="btn btn-outli modal_form_trigger">Make an Appointment</bottom>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="bg-brown pt-5">
+    <div class="container d-flex flex-wrap py-5">
+        <div class="col-lg-3 col-xl-3 col-md-6  d-block">
+            <h3 class="d-block text-24 font-weight-normal py-4 text-white ">
+                How to Find Us
+            </h3>
+            <a href="#" class="d-block modal_form_trigger">Make Appointment</a>
+            <a href="tel:+10 378 478 2789" class="d-block">+10 378 478 2789</a>
+        </div>
+        <div class="col-lg-3 col-xl-3 col-md-6 d-block">
+            <h3 class="d-block text-24 font-weight-normal py-4 text-white ">
+                Address
+            </h3>
+            <a href="#" class="d-block ">200, A-block, Green road, USA</a>
+            <a href="tel:+10 367 267 2678" class="d-block ">+10 367 267 2678</a>
+            <a href="mailto:contact@nonprofit.com" class="d-block ">contact@nonprofit.com</a>
+            <div class="d-flex  pt-4">
+                <div class="col-2 ">
+                    <a href="#" class=" fas fa-envelope text-decoration-none text-gray px-2"></a>
+                </div>
+                <div class="col-2 ">
+                    <a href="#" class="fab fa-twitter text-decoration-none text-gray px-2"></a>
+                </div>
+                <div class="col-2 ">
+                    <a href="#" class="  fab fa-linkedin-in text-decoration-none text-gray px-2"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-xl-2 col-md-6 d-block">
+            <h3 class="d-block text-24 font-weight-normal py-4 text-white ">
+                Navigation
+            </h3>
+            <a href="#top" class="d-block  ">Home</a>
+            <a href="#" class="d-block  ">Rooms</a>
+            <a href="#" class="d-block  ">About</a>
+            <a href="#" class="fd-block  ">News</a>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 d-block">
+            <h3 class="d-block text-24 font-weight-normal py-4 text-white ">
+                Newsletter
+            </h3>
+            <div>
+                <form action="" class="d-flex">
+                    <input type="text" placeholder="Enter your mail" class="col-9 py-2 px-3 text-16 ">
+                    <input type="submit" value="Sing up"
+                           class="col-lg-3 col-xl-3 py-2 px-3 text-16 btn btn-light-brown">
+                </form>
+            </div>
+            <p class="d-block  text-gray font-wait-light text-16 py-3">Subscribe newsletter to get updates</p>
+
+
+        </div>
+
+
+    </div>
+
+    <div class="container border-top-gray py-5 text-center text-gray text-16">
+        Copyright �2019 All rights reserved | This template is made with <i class="far fa-heart"></i> by <a href="#"
+                                                                                                            class="text-lightbrown">Colorlib</a>
+    </div>
+</footer>
+
+<div id="modal_form"
+     class="model_form_wrapper d-flex h-100vh justify-content-center align-items-center position-fixed fixed-top col-12 ">
+    <form action="" class="col-6 bg-white p-5 d-flex flex-wrap position-relative">
+
+        <div id="model_close" class="model_close position-absolute"></div>
+
+        <div class="col-12 text-24 font-weight-normal text-center pb-4">
+            Tak Len`
+        </div>
+
+        <div class="col-6  pb-4 px-2">
+            <input type="text" class="col-12 p-3" placeholder="Name">
+        </div>
+        <div class="col-6  pb-4 px-2">
+            <input type="text" class="col-12 p-3" placeholder="SurName">
+        </div>
+        <div class="col-6  pb-4 px-2">
+            <input type="email" class="col-12 p-3" placeholder="email">
+        </div>
+        <div class="col-6  pb-4 px-2">
+            <input type="tel" class="col-12 p-3" placeholder="Phone number">
+        </div>
+        <div class="col-12 pb-4 px-2">
+            <textarea class="col-12 p-3" placeholder="message" row="8"></textarea>
+        </div>
+        <div class="col-12  pb-4 px-2">
+            <button type="submit" class="btn btn-brown px-5 by-3 col-12">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js">
+
+</script>
+<script src="js/script.js"></script>
+<script>
+
+</script>
+</body>
+</html>
